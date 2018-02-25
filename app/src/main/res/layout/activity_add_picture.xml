@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oyeleke.renderer.AddPictureActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:background="#eee"
+            android:layout_width="360dp"
+            android:layout_height="400dp"
+            android:id="@+id/iv_image_view_conatiner"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="image to be posted"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_image_black_24dp"
+                android:id="@+id/iv_selectPictureButton"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/bt_post_picture_button"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_edittext"
+                android:text="post"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>
